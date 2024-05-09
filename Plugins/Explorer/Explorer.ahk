@@ -57,7 +57,7 @@ Explorer:
     vim.map("gg", "<home>", "Explorer")
     vim.map("G", "<end>", "Explorer")
     ; vim.map("f", "<Explorer_GotoTCX>", "Explorer")
-    vim.map("<a-e>", "<Explorer_GotoDCX>", "Explorer")
+    vim.map("<a-e>", "<Explorer_GotoDCInNewTabX>", "Explorer")
     vim.map("F", "<Explorer_GotoDC>", "Explorer")
 
     vim.BeforeActionDo("Explorer_ForceInsertMode", "Explorer")
@@ -222,6 +222,8 @@ Explorer_GotoDC(newTab, closeExplorer = false)
         {
             WinClose, A
         }
+        ; 显示获取到的文件路径
+        ; MsgBox, 文件路径：%FileToOpen%
         DC_OpenPath(FileToOpen, newTab, "-L")
         Clipboard := OldClipboard
         OldClipboard =

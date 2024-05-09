@@ -2,7 +2,7 @@
     global DC_Name := "DoubleCommander"
     global DC_Class := "TTOTAL_CMD"
     global DC := "ahk_class " . DC_Class
-    global DC_Dir := "c:\mine\app\doublecmd"
+    global DC_Dir := "C:\Program Files\Double Commander"
     global DC_Path := DC_Dir . "\doublecmd.exe --no-splash"
     ; 用于记录文件打开对话框所属窗体
     global DC_CallerId := 0
@@ -67,6 +67,9 @@ DC_ExecuteToolbarItem(ID) {
 }
 
 DC_OpenPath(Path, InNewTab := true, LeftOrRight := "") {
+    ; 显示获取到的文件路径
+    ; MsgBox, 文件路径：%Path%
+
     LeftOfRight := DC_GetPanelInfo()[1]
     if (LeftOfRight == "right") {
         LeftOrRight := "-R"
@@ -75,6 +78,7 @@ DC_OpenPath(Path, InNewTab := true, LeftOrRight := "") {
     }
 
     if (InNewTab) {
+        ; MsgBox, %DC_Path% -C -T "%LeftOrRight%" "%Path%"
         Run, %DC_Path% -C -T "%LeftOrRight%" "%Path%"
     } else {
         Run, %DC_Path% -C "%LeftOrRight%" "%Path%"
