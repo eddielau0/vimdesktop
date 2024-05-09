@@ -2,6 +2,15 @@
 
 让所有 Windows 桌面程序拥有 Vim 操作风格的辅助工具。
 
+### Quickstart
+
+编辑目录下的 ./Plugins 下进行增减插件。在 ./Conf/vimd.ini 文件中将 `[plugins]` 进行插件 `启用/禁用`
+
+在 `%OneDrive%\Software\vimdesktop\Plugins\` 下进行配置 ahk 文件路径，比如 DC 的配置：
+`\#include*i%A_ScriptDir%\plugins\DoubleCommander\DoubleCommander.ahk`
+
+最后重启 VimD 可自动生效
+
 ### 链接
 
 [详细介绍](https://github.com/goreliu/vimdesktop/wiki)

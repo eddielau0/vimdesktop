@@ -56,8 +56,9 @@ Explorer:
     vim.map("<c-k>", "<up>", "Explorer")
     vim.map("gg", "<home>", "Explorer")
     vim.map("G", "<end>", "Explorer")
-    vim.map("f", "<Explorer_GotoTCInNewTab>", "Explorer")
-    vim.map("F", "<Explorer_GotoTC>", "Explorer")
+    ; vim.map("f", "<Explorer_GotoTCX>", "Explorer")
+    vim.map("<a-e>", "<Explorer_GotoDCX>", "Explorer")
+    vim.map("F", "<Explorer_GotoDC>", "Explorer")
 
     vim.BeforeActionDo("Explorer_ForceInsertMode", "Explorer")
 
