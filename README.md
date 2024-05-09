@@ -4,6 +4,8 @@
 
 ### Quickstart
 
+参考 Doc 文件夹，以及 `./Doc/wiki/如何写插件.md`
+
 编辑目录下的 ./Plugins 下进行增减插件。在 ./Conf/vimd.ini 文件中将 `[plugins]` 进行插件 `启用/禁用`
 
 在 `%OneDrive%\Software\vimdesktop\Plugins\` 下进行配置 ahk 文件路径，比如 DC 的配置：

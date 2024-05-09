@@ -10,7 +10,7 @@
 ; #include *i %A_ScriptDir%\plugins\TCDialog\TCDialog.ahk
 #include *i %A_ScriptDir%\plugins\TotalCommander\TotalCommander.ahk
 #include *i %A_ScriptDir%\plugins\Typora\Typora.ahk
-; #include *i %A_ScriptDir%\plugins\Windows\Windows.ahk
+#include *i %A_ScriptDir%\plugins\Windows\Windows.ahk
 #include *i %A_ScriptDir%\plugins\WinMerge\WinMerge.ahk
 #include *i %A_ScriptDir%\plugins\DoubleCommander\ExplorerToDoubleCommander.ahk
 ; #include *i %A_ScriptDir%\plugins\DoubleCommander\Esc2.ahk
