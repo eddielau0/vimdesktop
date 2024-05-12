@@ -20,12 +20,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
   clipboard=%title%
 return
 
-; #] 鼠标右键
-#;::
-Send {RButton Down}
+; #; Windows 的 Context Menu 上下文键，Menu. This is the key that invokes the right-click context menu.
+#;::Send {AppsKey}f
+; Send {RButton Down}
 ; KeyWait, ]
-Send {RButton Up}
-Send {Win Up}
+; Send {RButton Up}
+; Send {Win Up}
 Return
 
 ; #[ 鼠标左键
