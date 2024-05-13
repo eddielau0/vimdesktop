@@ -12,10 +12,11 @@
     Vim.SetWin(DC_Name, DC_Class, "doublecmd.exe")
     Vim.Mode("normal", DC_Name)
     vim.map("'", "<DC_Test>", DC_Name)
-    vim.Map("k", "<up>", DC_Name)
-    vim.Map("j", "<down>", DC_Name)
-    vim.Map("h", "<left>", DC_Name)
-    vim.Map("l", "<right>", DC_Name)
+    ; 会影响到 CapsLock+ 的操作
+    ; vim.Map("k", "<up>", DC_Name)
+    ; vim.Map("j", "<down>", DC_Name)
+    ; vim.Map("h", "<left>", DC_Name)
+    ; vim.Map("l", "<right>", DC_Name)
     Vim.BeforeActionDo("DC_ForceInsertMode", DC_Name)
 return
 
