@@ -7,8 +7,15 @@
     ; 用于记录文件打开对话框所属窗体
     global DC_CallerId := 0
 
+    vim.comment("<DC_Test>", "测试 DC")
+
     Vim.SetWin(DC_Name, DC_Class, "doublecmd.exe")
     Vim.Mode("normal", DC_Name)
+    vim.map("'", "<DC_Test>", DC_Name)
+    vim.Map("k", "<up>", DC_Name)
+    vim.Map("j", "<down>", DC_Name)
+    vim.Map("h", "<left>", DC_Name)
+    vim.Map("l", "<right>", DC_Name)
     Vim.BeforeActionDo("DC_ForceInsertMode", DC_Name)
 return
 

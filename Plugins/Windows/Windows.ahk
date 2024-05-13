@@ -20,21 +20,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
   clipboard=%title%
 return
 
-; #; Windows 的 Context Menu 上下文键，Menu. This is the key that invokes the right-click context menu.
-#;::Send {AppsKey}f
-; Send {RButton Down}
-; KeyWait, ]
-; Send {RButton Up}
-; Send {Win Up}
+; 代替鼠标右键，应为鼠标可能会带到别处位置
+; #; AppsKey 是 Windows 的 Context Menu 上下文键，Menu. This is the key that invokes the right-click context menu.
+#;::Send {AppsKey}
 Return
 
-; #[ 鼠标左键
-; #[::
-; ; Send {LButton Down} {LButton Down}
-; Send {LButton Down}
-; KeyWait, [
-; Send {LButton Up}
-; Send {Win Up}
+; #[ 鼠标中间滚轮键
+#'::Send {MButton}
+Return
+
+; ; #[ 鼠标左键（平时作用不大）
+; #[::Send {LButton}
 ; Return
 
 ; 双击 ESC 关闭软件窗口，我本地是映射了 CapsLock -> Esc，所以是用的 CapsLock，如果要
