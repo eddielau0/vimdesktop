@@ -12,7 +12,7 @@
     Vim.SetWin(DC_Name, DC_Class, "doublecmd.exe")
     Vim.Mode("normal", DC_Name)
     vim.map("'", "<DC_Test>", DC_Name)
-    ; 会影响到 CapsLock+ 的操作
+    ; @Deprecated 弃用。会影响到 CapsLock+ 在里面的选择操作
     ; vim.Map("k", "<up>", DC_Name)
     ; vim.Map("j", "<down>", DC_Name)
     ; vim.Map("h", "<left>", DC_Name)
