@@ -37,3 +37,16 @@ return
     Sleep, 100  ; 等待操作完成
     Send, {Tab}
     return
+
+
+; Only for FileLocatorPro
+#IfWinActive ahk_exe FileLocatorPro.exe
+; 如果直接 Alt+t 会一闪而过有问题，所以改为这种写法
+^!s::
+    Send {Alt Down}
+    Sleep, 200  ; 等待操作完成
+    Send t
+    Send {Alt Up}
+    Sleep, 100  ; 等待操作完成
+    Send c
+return
