@@ -10,15 +10,16 @@
     global WeChat_CallerId := 0
 
     ; 定义注释（可选）
-    vim.SetAction("<WeChat_Msg_List>", "进入消息列表选择")
+    vim.comment("<WeChat_Msg_List>", "进入消息列表选择")
 
     ; 如果 class 和 exe 同时填写，以 exe 为准
     Vim.SetWin(WeChat_Name, WeChat_Class, WeChat_Exe)
 
     Vim.Mode("normal", WeChat_Name)
-    vim.Map("!1", "<WeChat_Msg_List>", WeChat_Name) ; Alt+1
+    ; Alt+1
+    vim.map("<a-1>", "<WeChat_Msg_List>", WeChat_Name)
 
-    Vim.BeforeActionDo("WeChat_ForceInsertMode", WeChat_Name)
+    ; Vim.BeforeActionDo("WeChat_ForceInsertMode", WeChat_Name)
 return
 
 ;; Only for WeChat
@@ -37,16 +38,3 @@ return
     Sleep, 100  ; 等待操作完成
     Send, {Tab}
     return
-
-
-; Only for FileLocatorPro
-#IfWinActive ahk_exe FileLocatorPro.exe
-; 如果直接 Alt+t 会一闪而过有问题，所以改为这种写法
-^!s::
-    Send {Alt Down}
-    Sleep, 200  ; 等待操作完成
-    Send t
-    Send {Alt Up}
-    Sleep, 100  ; 等待操作完成
-    Send c
-return

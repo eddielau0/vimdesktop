@@ -6,12 +6,9 @@
 
 参考 Doc 文件夹，以及 `./Doc/wiki/如何写插件.md`
 
-编辑目录下的 ./Plugins 下进行增减插件。在 ./Conf/vimd.ini 文件中将 `[plugins]` 进行插件 `启用/禁用`
+在 `./Plugins` 目录下新增目录进行增减插件，然后直接重启 VimD，会自动配置新插件 `./Conf/vimd.ini` 或 `./Plugins/Plugin` 
 
-在 `%OneDrive%\Software\vimdesktop\Plugins\` 下进行配置 ahk 文件路径，比如 DC 的配置：
-`\#include*i%A_ScriptDir%\plugins\DoubleCommander\DoubleCommander.ahk`
-
-最后重启 VimD 可自动生效
+> 增加插件时不需要更改 `./Conf/vimd.ini` 或 `./Plugins/Plugin`。如需 `启用/禁用` 才需要将文件 `./Conf/vimd.ini` 中将 `[plugins]` 列进行插件 `启用/禁用`
 
 ### 链接
 
