@@ -12,22 +12,24 @@
 #include *i %A_ScriptDir%\plugins\TotalCommander\TotalCommander.ahk
 #include *i %A_ScriptDir%\plugins\WeChat\WeChat.ahk
 #include *i %A_ScriptDir%\plugins\Windows\Windows.ahk
+#include *i %A_ScriptDir%\plugins\WindowsTerminal\WindowsTerminal.ahk
 #include *i %A_ScriptDir%\plugins\WinMerge\WinMerge.ahk
 /*
 [ExtensionsTime]
 BeyondCompare4=20240509132307
-Chrome=20240516095610
-Datagrip=20240516094613
+Chrome=20240516101827
+Datagrip=20240519162912
 DoubleCommander=20240513162913
 Explorer=20240509143512
 Foobar2000=20240509132307
 General=20240509132307
-IDEA=20240516093320
+IDEA=20240516101454
 MicrosoftExcel=20240509132307
 TCCompare=20240509132308
 TCDialog=20240509132308
 TotalCommander=20240509132308
 WeChat=20240514155725
 Windows=20240513162318
+WindowsTerminal=20240519163513
 WinMerge=20240509181113
 */
