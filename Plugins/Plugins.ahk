@@ -1,4 +1,5 @@
-﻿#include *i %A_ScriptDir%\plugins\BeyondCompare4\BeyondCompare4.ahk
+﻿#include *i %A_ScriptDir%\plugins\Apifox\Apifox.ahk
+#include *i %A_ScriptDir%\plugins\BeyondCompare4\BeyondCompare4.ahk
 #include *i %A_ScriptDir%\plugins\Chrome\Chrome.ahk
 #include *i %A_ScriptDir%\plugins\Datagrip\Datagrip.ahk
 #include *i %A_ScriptDir%\plugins\DoubleCommander\DoubleCommander.ahk
@@ -16,9 +17,10 @@
 #include *i %A_ScriptDir%\plugins\WinMerge\WinMerge.ahk
 /*
 [ExtensionsTime]
+Apifox=
 BeyondCompare4=20240509132307
 Chrome=20240516101827
-Datagrip=20240519162912
+Datagrip=20240520072053
 DoubleCommander=20240513162913
 Explorer=20240509143512
 Foobar2000=20240509132307
@@ -30,6 +32,6 @@ TCDialog=20240509132308
 TotalCommander=20240509132308
 WeChat=20240514155725
 Windows=20240513162318
-WindowsTerminal=20240519163513
+WindowsTerminal=20240520072155
 WinMerge=20240509181113
 */
