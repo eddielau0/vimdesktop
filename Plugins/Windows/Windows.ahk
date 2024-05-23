@@ -17,8 +17,7 @@ Return
 ; #[::Send {LButton}
 ; Return
 ; #[ 鼠标中间滚轮键
-#'::Send {MButton}
-Return
+#'::Send {MButton} Return
 
 ; LWin+j/k/h/l 来控制窗口
 ; Remove current app from screen or minimize the desktop window.
@@ -27,11 +26,17 @@ Return
 ; Maximize the window.
 #!k::Send, #{Up}
 Return
-; Move an app or window in the desktop from one monitor to another.
+; 往左移动窗口
 #!h::Send, #{Left}
 Return
-; Move an app or window in the desktop from one monitor to another.
+; 往右移动窗口
 #!l::Send, #{Right}
+Return
+; 往另一块屏幕移动窗口 Move an app or window in the desktop from one monitor to another.
+#+h::Send, #+{Left}
+Return
+; 往另一块屏幕移动窗口 Move an app or window in the desktop from one monitor to another.
+#+l::Send, #+{Right}
 Return
 
 ; 弃用，改用下面双击 CapsLock 的方式
