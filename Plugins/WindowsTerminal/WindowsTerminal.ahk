@@ -16,11 +16,11 @@
     Vim.SetWin(WindowsTerminal_Name, WindowsTerminal_Class, WindowsTerminal_Exe)
 
     Vim.Mode("normal", WindowsTerminal_Name)
-    vim.map("<w-w>", "<WindowsTerminal_Close_Window>", WindowsTerminal_Name) ; Win+w
+    ; vim.map("<w-w>", "<WindowsTerminal_Close_Window>", WindowsTerminal_Name) ; Win+w
 
     ; Vim.BeforeActionDo("WindowsTerminal_ForceInsertMode", WindowsTerminal_Name)
 return
 
-<WindowsTerminal_Close_Window>:
-    Send ^+w
-    return
+; <WindowsTerminal_Close_Window>:
+;     Send ^+w
+;     return

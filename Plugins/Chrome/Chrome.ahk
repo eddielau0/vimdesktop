@@ -16,7 +16,7 @@
     Vim.SetWin(Chrome_Name, Chrome_Class, Chrome_Exe)
 
     Vim.Mode("normal", Chrome_Name)
-    vim.map("<w-w>", "<Chrome_Close_Window>", Chrome_Name) ; Win+w
+    ; vim.map("<w-w>", "<Chrome_Close_Window>", Chrome_Name) ; Win+w
     vim.map("<a-h>", "<Chrome_Siwtch_Tab_Left>", Chrome_Name)
     vim.map("<a-l>", "<Chrome_Siwtch_Tab_Right>", Chrome_Name)
     ; vim.map("<sp-w>", "<Chrome_Close_Window>", Chrome_Name) ; 空格+w
