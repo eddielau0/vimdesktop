@@ -16,23 +16,12 @@
     Vim.SetWin(Obsidian_Name, Obsidian_Class, Obsidian_Exe)
 
     Vim.Mode("normal", Obsidian_Name)
-    ; vim.map("<a-j>", "<Obsidian_Siwtch_Tab_Down>", Obsidian_Name)
-    ; vim.map("<a-k>", "<Obsidian_Siwtch_Tab_Up>", Obsidian_Name)
     vim.map("<a-h>", "<Obsidian_Siwtch_Tab_Left>", Obsidian_Name)
     vim.map("<a-l>", "<Obsidian_Siwtch_Tab_Right>", Obsidian_Name)
-    ; vim.map("<sp-w>", "<Obsidian_Close_Window>", Obsidian_Name) ; 空格+w
-    ; vim.map("<space>w", "<Obsidian_Close_Window>", Obsidian_Name) ; 空格+w。这种也可以实现，区别是按下 space 键会有弹窗提示
+    vim.map("<a-t>", "<Obsidian_Insert_Table>", Obsidian_Name)
 
     ; Vim.BeforeActionDo("Obsidian_ForceInsertMode", Obsidian_Name)
 return
-
-<Obsidian_Siwtch_Tab_Up>:
-    Send, !{Up}
-    return
-
-<Obsidian_Siwtch_Tab_Down>:
-    Send, !{Down}
-    return
 
 <Obsidian_Siwtch_Tab_Left>:
     Send, ^+{Tab}
@@ -41,3 +30,7 @@ return
 <Obsidian_Siwtch_Tab_Right>:
     Send, ^{Tab}
     return
+
+<Obsidian_Insert_Table>:
+  SendInput !{Insert}表格{enter}{up 3}{right}{right}
+  return
