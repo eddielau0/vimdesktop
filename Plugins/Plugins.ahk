@@ -9,6 +9,7 @@
 #include *i %A_ScriptDir%\plugins\IDEA\IDEA.ahk
 #include *i %A_ScriptDir%\plugins\MicrosoftExcel\MicrosoftExcel.ahk
 #include *i %A_ScriptDir%\plugins\Obsidian\Obsidian.ahk
+#include *i %A_ScriptDir%\plugins\PotPlayer\PotPlayer.ahk
 #include *i %A_ScriptDir%\plugins\TCCompare\TCCompare.ahk
 #include *i %A_ScriptDir%\plugins\TCDialog\TCDialog.ahk
 #include *i %A_ScriptDir%\plugins\TotalCommander\TotalCommander.ahk
@@ -20,20 +21,21 @@
 [ExtensionsTime]
 Apifox=20240523072857
 BeyondCompare4=20240509132307
-Chrome=20240516101827
+Chrome=20240530070800
 Datagrip=20240520072053
 DoubleCommander=20240529151559
 Explorer=20240509143512
 Foobar2000=20240509132307
 General=20240509132307
-IDEA=20240528170743
+IDEA=20240530071158
 MicrosoftExcel=20240509132307
-Obsidian=20240530065219
+Obsidian=20240607075915
+PotPlayer=20250824152300
 TCCompare=20240509132308
 TCDialog=20240509132308
 TotalCommander=20240509132308
 WeChat=20240514155725
 Windows=20240523091713
-WindowsTerminal=20240520072155
+WindowsTerminal=20240530070358
 WinMerge=20240509181113
 */
